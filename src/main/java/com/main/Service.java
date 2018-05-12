@@ -31,13 +31,12 @@ public class Service extends HttpServlet {
         resp.setContentType("application/json");
         resp.setCharacterEncoding("UTF-8");
         try (PrintWriter out = resp.getWriter()) {
-//            ProductDAO pdao = new ProductDAO();
-//            ArrayList<Product> list = pdao.getAll();
-//            Gson gson = new Gson(); 
-//            String json = gson.toJson(list, new TypeToken<List<Product>>() {}.getType());
-//            out.println(json);
+            ProductDAO pdao = new ProductDAO();
+            ArrayList<Product> list = pdao.getAll();
+            Gson gson = new Gson(); 
+            String json = gson.toJson(list, new TypeToken<List<Product>>() {}.getType());
+            out.println(json);
 
-            out.println("Hello world!");
         }
     }
 
