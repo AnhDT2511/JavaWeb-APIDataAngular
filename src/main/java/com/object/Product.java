@@ -21,12 +21,12 @@ public class Product implements Serializable{
     private String description;
     private int status;
     private int category;
-    private Image image;
+    private String image;
 
     public Product() {
     }
 
-    public Product(int id, int colorId, String name, int price, String size, String description, int status, int category, Image image) {
+    public Product(int id, int colorId, String name, int price, String size, String description, int status, int category, String image) {
         this.id = id;
         this.colorId = colorId;
         this.name = name;
@@ -102,11 +102,11 @@ public class Product implements Serializable{
         this.category = category;
     }
 
-    public Image getImage() {
+    public String getImage() {
         return image;
     }
 
-    public void setImage(Image image) {
+    public void setImage(String image) {
         this.image = image;
     }
 

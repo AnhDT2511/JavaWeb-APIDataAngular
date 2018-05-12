@@ -40,7 +40,7 @@ public class ProductDAO{
                 product.setDescription(rs.getString(6));
                 product.setStatus(rs.getInt(7));
                 product.setCategory(rs.getInt(8));
-                product.setImage(new Image(rs.getString(9)));
+                product.setImage(rs.getString(9));
                 list.add(product);
             }
             return list;
